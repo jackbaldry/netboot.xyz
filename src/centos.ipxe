@@ -12,6 +12,7 @@ set ksdevice eth0
 menu ${os} - ${arch} - Image Sig Checks: [${img_sigs_enabled}]
 item 7.4.1708 ${os} 7.4
 item 6.9 ${os} 6.9
+item 7.1.1503 ${os} 7.1
 isset ${osversion} || choose osversion || goto linux_menu
 echo ${cls}
 iseq ${osversion} 6.9 && set dir ${menu}/${osversion}/os/${arch} ||
